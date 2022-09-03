@@ -17,22 +17,22 @@ const Home: NextPage = () => {
         <Grid item xs={12} sm={6} md={4}>
           <Card 
             sx={{ 
-              height: 'calc(100vh - 90px)',
+              height: 'calc(100vh - 100px)',
             }}
           >
-            <CardHeader title={<Typography variant='h4'>Pending</Typography>}/>
+            <CardHeader title={<Typography variant='h4' color='primary'>Pending</Typography>}/>
             <NewEntry />
             <EntriesList status='pending'/>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ height: 'calc(100vh - 90px)' }}>
+          <Card sx={{ height: 'calc(100vh - 100px)' }}>
             <CardHeader title={<Typography variant='h4'>In progress</Typography>}/>
             <EntriesList status='in-progress'/>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ height: 'calc(100vh - 90px)' }}>
+          <Card sx={{ height: 'calc(100vh - 100px)' }}>
             <CardHeader title={<Typography variant='h4'>Finished</Typography>}/>
             <EntriesList status='finished'/>
           </Card>

@@ -133,7 +133,6 @@ const EntryPage: NextPage<Props> = ({ entry }) => {
               </Button>
               <IconButton
                 color='error'
-                sx={{ backgroundColor: '#333' }}
                 onClick={onDelete}
               >
                 <DeleteOutlinedIcon />

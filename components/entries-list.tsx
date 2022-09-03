@@ -1,5 +1,6 @@
 import React, { useContext, useMemo } from 'react'
-import { Paper, List, Typography } from '@mui/material'
+import { Paper, List } from '@mui/material'
+import blueGrey from '@mui/material/colors'
 import { EntriesCard } from './entries-card'
 import { EntryStatus } from '../interfaces'
 import { EntriesContext } from '../context/entries/entries-context'
@@ -38,7 +39,7 @@ export const EntriesList: React.FC<Props> = ({ status }) => {
 					padding: 1,
 					marginTop: 1,
 					overflow: 'auto',
-					backgroundColor: 'transparent'
+					backgroundColor: 'secondary.main'
 				}}
 			>
 				<List 

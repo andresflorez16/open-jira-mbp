@@ -3,6 +3,12 @@ import { createTheme } from '@mui/material'
 export const darkTheme = createTheme({
 	palette: {
 		mode: 'dark',
+		primary: {
+			main: '#90caf9'
+		},
+		secondary: {
+			main: '#222'
+		},
 		background: {
 			default: '#222'
 		},
@@ -22,7 +28,6 @@ export const darkTheme = createTheme({
 			styleOverrides:{
 				root:{
 					backgroundColor: '#777',
-					color: '#222'
 				}
 			}
 		}
